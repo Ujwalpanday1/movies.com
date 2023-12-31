@@ -1,0 +1,777 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+
+#Home {
+    color: coral;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    margin-right: auto;
+    padding: 0px 30px;
+}
+
+#navbar li {
+    display: inline-block;
+    padding: 14px;
+}
+
+#navbar li a {
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in 0s;
+}
+
+#navbar li a:hover {
+    color: coral;
+}
+
+button {
+    color: black;
+    background-color: coral;
+    padding: 5px 5px;
+    border-radius: 40px;
+    margin: 0px 5px 0px 0px;
+    transition: all 0.3s ease-in 0s;
+}
+
+button:hover {
+    background-color: rgba(255, 127, 80, 0.75);
+    cursor: pointer;
+}
+
+#search {
+    color: black;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    margin: 63px 0px 0px 0px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#loader {
+    height: 15px;
+    width: 15px;
+    border: 5px solid black;
+    border-top: 5px solid coral;
+    border-bottom: 5px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 2;
+    animation: circle .9s ease 0s infinite normal;
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+#container1 {
+    max-height: 100vh;
+    overflow: scroll;
+    width: 90%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.936);
+    margin-right: 3px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.box {
+    height: 282px;
+    width: 175px;
+    border-radius: 1.5px;
+    color: white;
+    background-color: black;
+    padding: 1px;
+    margin: 20px 18px;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+
+}
+
+.box:hover {
+    color: coral;
+    border-top: 4px solid coral;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    cursor: pointer;
+}
+
+#container1 p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+    margin: 5px 0PX;
+}
+
+.common {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.id1 {
+    background-image: url(Avatar_large.jpg);
+}
+
+.id2 {
+    background-image: url(boys.jpg);
+}
+
+.id3 {
+    background-image: url(shawshanlk.jpg);
+}
+
+.id4 {
+    background-image: url(doctor\ strange.jpg);
+}
+
+.id5 {
+    background-image: url(dune-part-1-i122815.jpg);
+}
+
+.id6 {
+    background-image: url(her.jpg);
+}
+
+.id7 {
+    background-image: url(john-wick_u-L-F7SH250.jpg);
+}
+
+.id8 {
+    background-image: url(sam.jpg);
+}
+
+.id9 {
+    background-image: url(lord\ of\ war.jpg);
+}
+
+.id10 {
+    background-image: url(joker_full.jpg);
+}
+
+.id11 {
+    background-image: url(Oppenheimer-CillianMurphy-ChristopherNolan-HollywoodMoviePoster_1_0d1586b1-e2a3-48ea-84a0-fd76268635f4.jpg);
+}
+
+.id12 {
+    background-image: url(parasite2.jpg);
+}
+
+.id13 {
+    background-image: url(desktop-wallpaper-rrr-bollywood-2022-movie-poster-thumbnail.jpg);
+}
+
+.id14 {
+    background-image: url(stranger\ sthings.jpg);
+}
+
+.id15 {
+    background-image: url(thorloveandthunder_lob_crd_04.jpg);
+}
+
+.id16 {
+    background-image: url(titanic.jpg);
+}
+
+.id17 {
+    background-image: url(toystory.webp);
+}
+
+.id18 {
+    background-image: url(nun.jpg);
+}
+
+.id19 {
+    background-image: url(Batman.png);
+}
+
+.id20 {
+    background-image: url(nepoleon.jpg);
+}
+
+.id21 {
+    background-image: url(A_Beautiful_Mind_Poster.jpg);
+}
+
+.id22 {
+    background-image: url(ALLADIN.jpg);
+}
+
+.id23 {
+    background-image: url(Asur-Season-1_1685018145.jpg);
+}
+
+.id24 {
+    background-image: url(kgf.jpg);
+}
+
+.id25 {
+    background-image: url(The-Flash-Movie-Poster-International-01.jpeg);
+}
+
+.id26 {
+    background-image: url(breaking\ bad.jpg);
+}
+
+.id27 {
+    background-image: url(deadpool.jpg);
+}
+
+.id28 {
+    background-image: url(lalaland.jpg);
+}
+
+.id29 {
+    background-image: url(invincible.jpg);
+}
+
+.id30 {
+    background-image: url(last.jpg);
+}
+
+.id31 {
+    background-image: url(loki.jpeg);
+}
+
+.id32 {
+    background-image: url(pursuit.jpg);
+}
+
+.id33 {
+    background-image: url(lucy.jpg);
+}
+
+.id34 {
+    background-image: url(moonlight.jpeg);
+}
+
+.id35 {
+    background-image: url(NO\ WAY\ HOME.jpg);
+}
+
+.id36 {
+    background-image: url(wandavision.R85648_240x360_crop_center.progressive.jpg);
+}
+
+.common:hover {
+    border-radius: 25px;
+}
+
+#container2 {
+    max-height: 100vh;
+    overflow: scroll;
+    width: 10%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.936);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+#container2 li {
+    padding: 13px;
+    margin: 6px 15px;
+    /* list-style: square; */
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.3s ease 0s;
+}
+
+#container2 #head {
+    list-style: none;
+    font-size: 20px;
+    margin: 2px 30px ;
+    color: coral;
+    font-weight: bolder;
+    border: 2px solid transparent;
+}
+
+#container2 #head:hover {
+    border: 3px solid coral;
+}
+
+
+#container2 li:hover {
+    color: coral;
+    cursor: pointer;
+}
+
+#container2 .year li {
+    list-style: none;
+    display: inline-block;
+    margin: 12px;
+    padding: 7px;
+}
+
+/* RESPONSIVENESS .................................................................................................*/
+
+
+@media (max-width: 312px) {
+
+    header {
+        height: 120px;
+    }
+
+    main {
+        margin: 125px 3px 3px;
+    }
+
+    header #Home {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    header #loader {
+        height: 10px;
+        width: 10px;
+    }
+
+    #navbar {
+        margin-right: 10px;
+    }
+
+    #navbar li {
+
+
+        display: block;
+        padding: 4px;
+
+    }
+
+    #navbar li a {
+        font-size: 10px;
+    }
+
+
+    header #search {
+        margin-left: 2px;
+        display: none;
+    }
+
+
+    #container1 {
+        height: 100%;
+        width: 75%;
+    }
+
+
+    #container1 p {
+        font-size: 8px;
+    }
+
+    .box {
+
+        height: 240px;
+        width: 155px
+    }
+
+    .box:hover {
+        border-radius: 12px;
+    }
+
+    .common:hover {
+        border-radius: 12px;
+    }
+
+    #container2 {
+        width: 25%
+    }
+
+    #container2 li {
+        margin: 1px 2px;
+        padding: 6px;
+        font-size: 7px;
+    }
+
+    #container2 #head {
+        font-size: 8px;
+        margin: 1px 0px 1px 15px;
+        padding: 0px;
+
+    }
+
+}
+
+
+@media (min-width:313px) and (max-width:367px) {
+
+    header {
+        height: 60px;
+    }
+
+    main {
+        margin: 62px 3px 3px;
+    }
+
+    header #Home {
+        font-size: 14px;
+        padding: 3px;
+    }
+
+    header #loader {
+        height: 5px;
+        width: 5px;
+    }
+
+    #navbar {
+        margin-right: 4px;
+    }
+
+    #navbar li {
+        display: inline-block;
+        padding: 2px;
+
+    }
+
+    #navbar li a {
+        font-size: 8px;
+    }
+
+    header #search {
+        display: none;
+    }
+
+
+    #container1 {
+        height: 100%;
+        width: 80%
+    }
+
+    #container1 p {
+        font-size: 6px;
+    }
+
+
+    .box {
+        height: 124px;
+        width: 72px
+    }
+
+    .box:hover {
+        color: coral;
+        border-top: 4px solid coral;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        cursor: pointer;
+    }
+
+    #container2 {
+        width: 20%
+    }
+
+    #container2 li {
+        margin: 5px 0px;
+        padding: 8px;
+        font-size: 6px;
+    }
+
+    #container2 #head {
+        font-size: 8px;
+        margin: 2px 10px 2px 12px;
+        padding: 0px;
+
+    }
+
+}
+
+@media (min-width:367px) and (max-width:407px) {
+
+    header #Home {
+        font-size: 17px;
+        padding: 4px;
+    }
+
+    header #loader {
+        height: 6px;
+        width: 6px;
+    }
+
+    #navbar {
+        margin-right: 4px;
+    }
+
+    #navbar li {
+
+        padding: 4px;
+
+    }
+
+    #navbar li a {
+        font-size: 9px;
+    }
+
+
+    header #search {
+        display: none;
+    }
+
+    #container1 {
+        height: 100%;
+        width: 80%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    #container1 p {
+        font-size: 8px;
+    }
+
+    .box {
+
+        height: 157px;
+        width: 94px
+    }
+
+    .box:hover {
+        border-radius: 12px;
+    }
+
+    .common:hover {
+        border-radius: 12px;
+    }
+
+    #container2 {
+        width: 20%
+    }
+
+    #container2 li {
+        margin: 6px 1px;
+        padding: 10px;
+        font-size: 9px;
+    }
+
+    #container2 #head {
+        font-size: 13px;
+        margin: 1px 10px;
+        padding: 0px;
+
+    }
+
+}
+
+
+@media (min-width: 407px) and (max-width: 810px) {
+    header #Home {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    header #loader {
+        height: 8px;
+        width: 8px;
+    }
+
+    #navbar {
+        margin-right: 4px;
+    }
+
+    #navbar li {
+
+        padding: 3px;
+
+    }
+
+    #navbar li a {
+        font-size: 10px;
+    }
+
+    header #search {
+        display: none;
+    }
+
+
+    #container1 {
+        height: 100%;
+        width: 80%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    #container1 p {
+        font-size: 8px;
+
+    }
+
+    .box {
+
+        height: 180px;
+        width: 110px
+    }
+
+    .box:hover {
+        border-radius: 12px;
+    }
+
+    .common:hover {
+        border-radius: 12px;
+    }
+
+    #container2 {
+        width: 20%
+    }
+
+    #container2 li {
+        margin: 6px 1px;
+        padding: 10px;
+        font-size: 9px;
+    }
+
+    #container2 #head {
+        font-size: 13px;
+        margin: 1px 10px;
+        padding: 0px;
+
+    }
+
+}
+
+@media (min-width:650px) {
+
+    header #search {
+        margin-left: 2px;
+        display: inline-block;
+    }
+}
+
+
+@media (min-width: 810px) and (max-width:1219px) {
+    header #Home {
+        font-size: 24px;
+        padding: 14px;
+    }
+
+    header #loader {
+        height: 12px;
+        width: 12px;
+    }
+
+    #navbar {
+        margin-right: 4px;
+    }
+
+    #navbar li {
+
+        padding: 4px;
+
+    }
+
+    #navbar li a {
+        font-size: 14px;
+    }
+
+
+    header #search {
+        margin-left: 2px;
+        display: inline-block;
+    }
+
+
+    #container1 {
+        height: 100%;
+        width: 90%;
+    }
+
+
+    #container1 p {
+        font-size: 8px;
+    }
+
+    .box {
+
+        height: 228px;
+        width: 140px
+    }
+
+    .box:hover {
+        border-radius: 12px;
+    }
+
+    .common:hover {
+        border-radius: 12px;
+    }
+
+    #container2 {
+        width: 10%
+    }
+
+    #container2 li {
+        margin: 6px 0px 6px 8px;
+        padding: 12px;
+        font-size: 10px;
+    }
+
+    #container2 #head {
+        font-size: 13px;
+        margin: 1px 10px;
+        padding: 0px;
+
+    }
+
+}
+
+
+
+
+/* RESPONSIVENESS ................................................................................................*/
+
+footer {
+    height: 50px;
+    width: 100%;
+    color: coral;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
