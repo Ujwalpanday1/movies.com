@@ -104,9 +104,36 @@ main {
     
     display: flex;
     background-color: rgba(0, 0, 0, 0.936);
-    height: 85vh;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    height: fit-content;
+    min-height: 85vh;
     width: 100vw;
     display:none;
+}
+.details{
+    width: 40vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 5vh 0;
+
+}
+.detail-item{
+    display: flex;
+    width: 35vw;
+}
+.details h4,p{
+    color: white;
+    font-size: 1.6vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+.poster img{
+    width: 40vw;
+    height: auto;
 }
 
 #container1 {
@@ -122,6 +149,7 @@ main {
     justify-content: space-around;
     flex-wrap: wrap;
     align-content: flex-start;
+    padding-top: 1vh;
 }
 
 .box {
@@ -140,10 +168,13 @@ main {
     position: relative;
 
 }
-
-.box:hover {
+.box img{
+    height: 282px;
+    width: 175px;
+}
+.box img:hover {
     color: coral;
-    border-top: 4px solid coral;
+    border-top: 6px solid coral;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     cursor: pointer;
@@ -162,151 +193,6 @@ main {
     width: 100%;
     background-size: cover;
 }
-
-.id1 {
-    background-image: url(Avatar_large.jpg);
-}
-
-.id2 {
-    background-image: url(boys.jpg);
-}
-
-.id3 {
-    background-image: url(shawshanlk.jpg);
-}
-
-.id4 {
-    background-image: url(doctor\ strange.jpg);
-}
-
-.id5 {
-    background-image: url(dune-part-1-i122815.jpg);
-}
-
-.id6 {
-    background-image: url(her.jpg);
-}
-
-.id7 {
-    background-image: url(john-wick_u-L-F7SH250.jpg);
-}
-
-.id8 {
-    background-image: url(sam.jpg);
-}
-
-.id9 {
-    background-image: url(lord\ of\ war.jpg);
-}
-
-.id10 {
-    background-image: url(joker_full.jpg);
-}
-
-.id11 {
-    background-image: url(Oppenheimer-CillianMurphy-ChristopherNolan-HollywoodMoviePoster_1_0d1586b1-e2a3-48ea-84a0-fd76268635f4.jpg);
-}
-
-.id12 {
-    background-image: url(parasite2.jpg);
-}
-
-.id13 {
-    background-image: url(desktop-wallpaper-rrr-bollywood-2022-movie-poster-thumbnail.jpg);
-}
-
-.id14 {
-    background-image: url(stranger\ sthings.jpg);
-}
-
-.id15 {
-    background-image: url(thorloveandthunder_lob_crd_04.jpg);
-}
-
-.id16 {
-    background-image: url(titanic.jpg);
-}
-
-.id17 {
-    background-image: url(toystory.webp);
-}
-
-.id18 {
-    background-image: url(nun.jpg);
-}
-
-.id19 {
-    background-image: url(Batman.png);
-}
-
-.id20 {
-    background-image: url(nepoleon.jpg);
-}
-
-.id21 {
-    background-image: url(A_Beautiful_Mind_Poster.jpg);
-}
-
-.id22 {
-    background-image: url(ALLADIN.jpg);
-}
-
-.id23 {
-    background-image: url(Asur-Season-1_1685018145.jpg);
-}
-
-.id24 {
-    background-image: url(kgf.jpg);
-}
-
-.id25 {
-    background-image: url(The-Flash-Movie-Poster-International-01.jpeg);
-}
-
-.id26 {
-    background-image: url(breaking\ bad.jpg);
-}
-
-.id27 {
-    background-image: url(deadpool.jpg);
-}
-
-.id28 {
-    background-image: url(lalaland.jpg);
-}
-
-.id29 {
-    background-image: url(invincible.jpg);
-}
-
-.id30 {
-    background-image: url(last.jpg);
-}
-
-.id31 {
-    background-image: url(loki.jpeg);
-}
-
-.id32 {
-    background-image: url(pursuit.jpg);
-}
-
-.id33 {
-    background-image: url(lucy.jpg);
-}
-
-.id34 {
-    background-image: url(moonlight.jpeg);
-}
-
-.id35 {
-    background-image: url(NO\ WAY\ HOME.jpg);
-}
-
-.id36 {
-    background-image: url(wandavision.R85648_240x360_crop_center.progressive.jpg);
-}
-
 .common:hover {
     border-radius: 25px;
 }
