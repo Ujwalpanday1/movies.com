@@ -6,8 +6,7 @@ const googleApiKey2="AIzaSyBGh2NURdIC06m3FMCspVyz7N5MuU5MooI"
 const googleApiKey=	"AIzaSyDODbPBPyncuOeuIOnR4jbHRiaAbBwp5sE"
 const genreIds = ["action", "animation", "comedy", "crime", "drama", "family", "fantasy", "fiction", "horror", "mystery", "mythology", "thriller", "romance", "sci-fi", "18+"];
 
-const landingArr=[ "avatar",
-"THE BOYS",
+const landingArr=[ 
 "THE SHAWSHANK REDEMPTION",
 "DOCTOR STRANGE",
 "DUNE",
@@ -19,6 +18,8 @@ const landingArr=[ "avatar",
 "OPPENHEIMER",
 "PARASITE",
 "RRR",
+"avatar",
+"THE BOYS",
 "STRANGER THINGS",
 "THOR LOVE AND THUNDER",
 "TITANIC",

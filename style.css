@@ -163,7 +163,7 @@ main {
 
 .box {
     height: 285px;
-    width: 170px;
+    width: 175px;
     border-radius: 1.5px;
     color: white;
     background-color: black;
@@ -180,7 +180,8 @@ main {
 .box img{
     border-radius: 3px;
     height: border-box;
-    width: 170px;
+    width:100%;
+    max-height:95%;
 }
 .box img:hover {
     color: coral;
@@ -350,6 +351,7 @@ main {
 
     header {
         height: 60px;
+        flex-wrap: wrap;
     }
 
     main {
@@ -368,6 +370,7 @@ main {
 
     #navbar {
         margin-right: 4px;
+        
     }
 
     #navbar li {
@@ -427,8 +430,10 @@ main {
 
 }
 
-@media (min-width:367px) and (max-width:407px) {
-
+@media (min-width:367px) and (max-width:400px) {
+    header{
+        flex-wrap: wrap;
+    }
     header #Home {
         font-size: 17px;
         padding: 4px;
@@ -455,7 +460,7 @@ main {
 
 
     header #search {
-        display: none;
+        display: block;
     }
 
     #container1 {
@@ -504,9 +509,13 @@ main {
 }
 
 
-@media (min-width: 407px) and (max-width: 810px) {
+@media (min-width: 400px) and (max-width: 810px) {
+    header {
+        flex-wrap: wrap;
+        height:70px ;
+    }
     header #Home {
-        font-size: 20px;
+        font-size: 15px;
         padding: 10px;
     }
 
@@ -526,15 +535,16 @@ main {
     }
 
     #navbar li a {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     header #search {
-        display: none;
+        display: block;
     }
 
 
     #container1 {
+        margin-top: 10px;
         height: 100%;
         width: 80%;
         justify-content: space-evenly;
@@ -567,6 +577,7 @@ main {
 
     #container2 li {
         margin: 6px 1px;
+        margin-top: 10px;
         padding: 10px;
         font-size: 9px;
     }
