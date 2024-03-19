@@ -2,7 +2,8 @@ const fp=document.querySelector("#container1")
 const sBox=document.querySelector("#sBox")
 let f=0;
 const apiKey="76f8f9c9";
-const googleApiKey="AIzaSyBGh2NURdIC06m3FMCspVyz7N5MuU5MooI"
+const googleApiKey2="AIzaSyBGh2NURdIC06m3FMCspVyz7N5MuU5MooI"
+const googleApiKey=	"AIzaSyDODbPBPyncuOeuIOnR4jbHRiaAbBwp5sE"
 const genreIds = ["action", "animation", "comedy", "crime", "drama", "family", "fantasy", "fiction", "horror", "mystery", "mythology", "thriller", "romance", "sci-fi", "18+"];
 
 const landingArr=[ "avatar",
@@ -637,7 +638,10 @@ document.querySelector(".list2").addEventListener("click",()=>{
 
         })
 document.querySelector("#search").addEventListener("submit",()=>{
-    search()
+
+    search();
+
+
 })
     function search(){
      f=1;
@@ -794,6 +798,5 @@ document.querySelector("#container1").addEventListener("click",(event)=>{
     sBox.value=`${mainp.querySelector("p").innerHTML}`
     search();
     }
-
 })
 
