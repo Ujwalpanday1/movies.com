@@ -586,6 +586,12 @@ land();
 let preId1="list1"
 document.querySelector("#lists").addEventListener("click",(event)=>{
    
+    // when something was searched and clicked on the lists it will not display unless this
+    document.querySelector(".trailer").innerHTML=""
+    document.querySelector("#sBox").value=""
+    document.querySelector(".searchC").style.display="none"
+    document.querySelector("#container1").style.display="flex"
+    document.querySelector("#container2").style.display="flex"
    // reseting the earlier style 
    document.querySelector(`#${preId1}`).style.color="white";
     // changing the color of the list on click 

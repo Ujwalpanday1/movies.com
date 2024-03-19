@@ -162,8 +162,8 @@ main {
 }
 
 .box {
-    height: 282px;
-    width: 175px;
+    height: 285px;
+    width: 170px;
     border-radius: 1.5px;
     color: white;
     background-color: black;
@@ -178,7 +178,8 @@ main {
 
 }
 .box img{
-    height: 270px;
+    border-radius: 3px;
+    height: border-box;
     width: 170px;
 }
 .box img:hover {
@@ -380,7 +381,7 @@ main {
     }
 
     header #search {
-        display: none;
+        display:block;
     }
 
 
