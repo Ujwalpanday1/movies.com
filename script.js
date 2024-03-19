@@ -18,14 +18,14 @@ const landingArr=[ "avatar",
 "JOKER",
 "OPPENHEIMER",
 "PARASITE",
-"R.R.R",
+"RRR",
 "STRANGER THINGS",
 "THOR LOVE AND THUNDER",
 "TITANIC",
-"TOYSTORY:4",
-"THE NUN:11",
+"spider-man",
+"THE NUN",
 "BATMAN:BEGINS",
-"NEPOLEON",
+"NAPOLEON",
 "A BEAUTIFUL MIND",
 "ALADDIN",
 "ASUR:WELCOME TO YOUR DARK SIDE",
@@ -37,7 +37,7 @@ const landingArr=[ "avatar",
 "INVINCIBLE",
 "THE LAST OF US",
 "LOKI",
-"THE PURSUIT OF HAPPPYNESS",
+"The Pursuit of Happyness",
 "LUCY",
 "MOONLIGHT",
 "SPIDER-MAN:NO WAY HOME",
@@ -117,7 +117,7 @@ const movieLists = {
         "Padmaavat",
         "3 Idiots",
         "Dilwale Dulhania Le Jayenge",
-        "Bahubali: The Beginning",
+        "Baahubali: The Beginning",
         "Lagaan",
         "PK",
         "Kabhi Khushi Kabhie Gham",
@@ -173,13 +173,10 @@ const genres = {
       "The Ice Age Adventures of Buck Wild",
       "Luca",
       "Raya and the Last Dragon",
-      "The Mitchells vs. the Machines",
       "Encanto",
       "Luca",
       "Sing 2",
-      "Hotel Transylvania: Transformania",
       "Ron's Gone Wrong",
-      "The Boss Baby: Family Business",
       "Spirit Untamed",
       "Tom and Jerry",
       "The Addams Family 2",
@@ -200,13 +197,11 @@ const genres = {
       "Red Notice",
       "The French Dispatch",
       "Vacation Friends",
-      "The Hitman's Wife's Bodyguard",
       "Jungle Cruise",
       "Fatherhood",
       "The Lovebirds",
       "Coming 2 America",
       "Barb and Star Go to Vista Del Mar",
-      "The Mitchells vs. the Machines",
       "Bad Trip",
       "Zola",
       "Plan B"
@@ -338,11 +333,11 @@ const genres = {
       "The Empty Man",
       "Escape Room: Tournament of Champions",
       "The Little Things",
-      "Fear Street Trilogy",
+      "Fear Street",
       "Don't Breathe 2",
-      "The Conjuring 3: The Devil Made Me Do It",
+      "The Conjuring: The Devil Made Me Do It",
       "The Babysitter: Killer Queen",
-      "Spiral: From the Book of Saw",
+      "Spiral",
       "Censor",
       "Saint Maud"
     ],
@@ -492,8 +487,7 @@ const genres = {
       "Fifty Shades Darker",
       "Fifty Shades Freed",
       "Nymphomaniac: Vol. I",
-      "Nymphomaniac: Vol. II",
-      "Blue Is the Warmest Color",
+      
       "Basic Instinct",
       "Eyes Wide Shut",
       "Showgirls",
@@ -518,8 +512,47 @@ const genres = {
       "The Piano Teacher",
       "The Idiots",
       "In the Realm of the Senses"
-    ]
-  };
+    ],
+    y2024: ["The Batman", "Spider-Man: No Way Home", "The Matrix Resurrections", "Black Panther: Wakanda Forever", "Doctor Strange in the Multiverse of Madness", "Thor: Love and Thunder", "Avatar: The Way of Water", "Jurassic World: Dominion", "The Flash", "Guardians of the Galaxy Vol. 3", "The Suicide Squad", "Top Gun: Maverick", "The Northman", "The Adam Project", "Sonic the Hedgehog 2", "Uncharted", "Nope", "Bullet Train", "The King's Man", "k.g.f", "Ambulance", "Moonfall", "Black Adam", "Morbius"],
+    y2023: [
+        "Guardians of the Galaxy Vol. 3",
+        "The Flash",
+        "Black Panther: Wakanda Forever",
+        
+        "Fast & Furious 11",
+        "Mission: Impossible ",
+        "Aquaman and the Lost Kingdom",
+        "Doctor Strange in the Multiverse of Madness",
+        "Thor: Love and Thunder",
+        "Top Gun: Maverick",
+        "Shazam! Fury of the Gods",
+        "The Suicide Squad "
+    ],
+    y2022: ["Turning Red", "Puss in Boots: The Last Wish", "The Ice Age Adventures of Buck Wild", "Luca", "Raya and the Last Dragon", "The Mitchells vs. the Machines", "Encanto", "Luca", "Sing 2", "Hotel Transylvania: Transformania", "Ron's Gone Wrong", "The Boss Baby: Family Business", "Spirit Untamed", "Tom and Jerry", "The Addams Family 2", "Rumble", "Arlo the Alligator Boy", "Extinct", "Trollhunters: Rise of the Titans", "Wish Dragon"],
+    y2021: ["Jackass Forever", "Marry Me", "Dog", "Everything Everywhere All at Once", "Bad Boys 4", "Palm Springs", "Free Guy", "Red Notice", "The French Dispatch", "Vacation Friends", "The Hitman's Wife's Bodyguard", "Jungle Cruise", "Fatherhood", "The Lovebirds", "Coming 2 America", "Barb and Star Go to Vista Del Mar", "The Mitchells vs. the Machines", "Bad Trip", "Zola", "Plan B"],
+    y2020: ["The Little Things", "No Sudden Move", "The Many Saints of Newark", "The Guilty", "The Woman in the Window", "The Gentlemen", "I Care a Lot", "Those Who Wish Me Dead", "Wrath of Man", "The Devil All the Time", "The Courier", "The Vault", "The Card Counter", "The Burnt Orange Heresy", "The Virtuoso", "The Informer", "The Tax Collector", "The Mauritanian", "The Gentlemen", "The Gentlemen", "The White Tiger"],
+    y2019: ["Toy Story 4", "Frozen II", "The Lion King", "Spider-Man: Far from Home", "Joker", "Captain Marvel", "Star Wars: The Rise of Skywalker", "Avengers: Endgame", "Jumanji: The Next Level", "The Irishman", "Once Upon a Time in Hollywood", "Knives Out", "Aladdin", "It Chapter Two", "Fast & Furious Presents: Hobbs & Shaw", "Maleficent: Mistress of Evil", "The Secret Life of Pets 2", "Godzilla: King of the Monsters", "Terminator: Dark Fate", "Hustlers"],
+    y2018: ["Avengers: Infinity War", "Black Panther", "Deadpool 2", "Aquaman", "Bohemian Rhapsody", "Fantastic Beasts: The Crimes of Grindelwald", "Spider-Man: Into the Spider-Verse", "Venom", "Mission: Impossible - Fallout", "A Star Is Born", "Ant-Man and the Wasp", "Ralph Breaks the Internet", "The Meg", "Solo: A Star Wars Story", "Ready Player One", "Mary Poppins Returns", "Bumblebee", "Jurassic World: Fallen Kingdom", "Mamma Mia! Here We Go Again", "The Grinch"],
+    y2017: ["Star Wars: The Last Jedi", "Beauty and the Beast", "Wonder Woman", "Jumanji: Welcome to the Jungle", "Guardians of the Galaxy Vol. 2", "Spider-Man: Homecoming", "It", "Thor: Ragnarok", "Despicable Me 3", "Justice League", "Logan", "The Fate of the Furious", "Coco", "Dunkirk", "The Greatest Showman", "War for the Planet of the Apes", "Pirates of the Caribbean: Dead Men Tell No Tales", "Kong: Skull Island", "Transformers: The Last Knight", "Get Out"],
+    y2016: ["Captain America: Civil War", "Rogue One: A Star Wars Story", "Finding Dory", "Zootopia", "The Jungle Book", "The Secret Life of Pets", "Batman v Superman: Dawn of Justice", "Deadpool", "Suicide Squad", "Moana", "Doctor Strange", "Sing", "Fantastic Beasts and Where to Find Them", "Moana", "Trolls", "La La Land", "Arrival", "The Angry Birds Movie", "X-Men: Apocalypse", "Kung Fu Panda 3"],
+    y2015: ["Star Wars: The Force Awakens", "Jurassic World", "Avengers: Age of Ultron", "Inside Out", "Furious 7", "Minions", "Spectre", "The Hunger Games: Mockingjay - Part 2", "The Martian", "Cinderella", "The Revenant", "Ant-Man", "Mission: Impossible - Rogue Nation", "Mad Max: Fury Road", "The Good Dinosaur", "Creed", "The SpongeBob Movie: Sponge Out of Water", "San Andreas", "The Hateful Eight", "Straight Outta Compton"],
+    y2014: ["Guardians of the Galaxy", "Transformers: Age of Extinction", "Maleficent", "The Hobbit: The Battle of the Five Armies", "Big Hero 6", "Interstellar", "Dawn of the Planet of the Apes", "The Amazing Spider-Man 2", "Godzilla", "X-Men: Days of Future Past", "The Hunger Games: Mockingjay - Part 1", "The LEGO Movie", "Captain America: The Winter Soldier", "Teenage Mutant Ninja Turtles", "Gravity", "The Hobbit: The Desolation of Smaug", "The Maze Runner", "The Fault in Our Stars", "Gone Girl"],
+    y2013: ["Frozen", "Iron Man 3", "Despicable Me 2", "The Hobbit: The Desolation of Smaug", "The Hunger Games: Catching Fire", "Man of Steel", "Gravity", "Thor: The Dark World", "The Croods", "World War Z", "Oz the Great and Powerful", "Star Trek Into Darkness", "The Wolverine", "Pacific Rim", "The Conjuring", "The Great Gatsby", "The Secret Life of Walter Mitty", "Now You See Me", "The Heat", "We're the Millers"],
+    y2012: ["The Avengers", "The Dark Knight Rises", "The Hobbit: An Unexpected Journey", "Skyfall", "The Twilight Saga: Breaking Dawn - Part 2", "The Amazing Spider-Man", "Brave", "The Hunger Games", "Men in Black 3", "Wreck-It Ralph", "Les Misérables", "Django Unchained", "The Expendables 2", "Ice Age: Continental Drift", "Madagascar 3: Europe's Most Wanted", "Life of Pi", "Ted", "Taken 2", "21 Jump Street"],
+    y2011: ["Harry Potter and the Deathly Hallows: Part 2", "Transformers: Dark of the Moon", "Pirates of the Caribbean: On Stranger Tides", "The Twilight Saga: Breaking Dawn - Part 1", "Mission: Impossible - Ghost Protocol", "The Hangover Part II", "Fast Five", "Cars 2", "Sherlock Holmes: A Game of Shadows", "Thor", "Captain America: The First Avenger", "Rise of the Planet of the Apes", "The Smurfs", "Kung Fu Panda 2", "X-Men: First Class", "The Adventures of Tintin", "Rio", "Rango", "Super 8", "Green Lantern"],
+    y2010: ["Toy Story 3", "Alice in Wonderland", "Harry Potter and the Deathly Hallows: Part 1", "Inception", "Shrek Forever After", "The Twilight Saga: Eclipse", "Iron Man 2", "Tangled", "Despicable Me", "How to Train Your Dragon", "The Karate Kid", "Clash of the Titans", "The Chronicles of Narnia: The Voyage of the Dawn Treader", "Tron: Legacy", "The King's Speech", "Megamind", "The Last Airbender", "Percy Jackson & the Olympians: The Lightning Thief", "Salt", "The Social Network"],
+    y2009: ["Avatar", "Harry Potter and the Half-Blood Prince", "Ice Age: Dawn of the Dinosaurs", "Transformers: Revenge of the Fallen", "2012", "Up", "The Twilight Saga: New Moon", "The Hangover", "Star Trek", "The Blind Side", "Monsters vs. Aliens", "X-Men Origins: Wolverine", "Night at the Museum: Battle of the Smithsonian", "Fast & Furious", "Cloudy with a Chance of Meatballs", "G.I. Joe: The Rise of Cobra", "Taken", "Sherlock Holmes", "Paul Blart: Mall Cop", "Inglourious Basterds"],
+    y2008: ["The Dark Knight", "Iron Man", "Indiana Jones and the Kingdom of the Crystal Skull", "Hancock", "WALL·E", "Kung Fu Panda", "Twilight", "Madagascar: Escape 2 Africa", "Quantum of Solace", "Bolt", "Mamma Mia!", "Slumdog Millionaire", "The Chronicles of Narnia: Prince Caspian", "Wanted", "Horton Hears a Who!", "Gran Torino", "Step Brothers", "Marley & Me", "Cloverfield", "Bedtime Stories"],
+    y2007: ["Pirates of the Caribbean: At World's End", "Harry Potter and the Order of the Phoenix", "Spider-Man 3", "Shrek the Third", "Transformers", "Ratatouille", "I Am Legend", "The Simpsons Movie", "National Treasure: Book of Secrets", "300", "Live Free or Die Hard", "The Bourne Ultimatum", "Juno", "Enchanted", "Superbad", "Knocked Up", "American Gangster", "Bee Movie", "Rush Hour 3", "Fantastic Four: Rise of the Silver Surfer"],
+    y2006: ["Pirates of the Caribbean: Dead Man's Chest", "The Da Vinci Code", "Ice Age: The Meltdown", "Casino Royale", "Night at the Museum", "Cars", "X-Men: The Last Stand", "Mission: Impossible III", "Superman Returns", "Happy Feet", "Over the Hedge", "The Devil Wears Prada", "Click", "Talladega Nights: The Ballad of Ricky Bobby", "Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan", "The Departed", "Dreamgirls", "The Pursuit of Happyness", "Apocalypto", "Flushed Away"],
+    y2005: ["Harry Potter and the Goblet of Fire", "Star Wars: Episode III - Revenge of the Sith", "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe", "War of the Worlds", "King Kong", "Madagascar", "Mr. & Mrs. Smith", "Charlie and the Chocolate Factory", "Batman Begins", "Hitch", "Wedding Crashers", "Fantastic Four", "Robots", "The 40-Year-Old Virgin", "Chicken Little", "Harry Potter and the Prisoner of Azkaban", "The Longest Yard", "The Island", "Madagascar", "Crash"],
+    y2004: ["Shrek 2", "Spider-Man 2", "The Passion of the Christ", "Meet the Fockers", "The Incredibles", "Harry Potter and the Prisoner of Azkaban", "The Day After Tomorrow", "The Bourne Supremacy", "National Treasure", "The Polar Express", "Shark Tale", "I, Robot", "The Aviator", "Troy", "Meet the Parents", "Van Helsing", "Fahrenheit 9/11", "Lemony Snicket's A Series of Unfortunate Events", "Garfield", "The Village"],
+    y2003: ["The Lord of the Rings: The Return of the King", "Pirates of the Caribbean: The Curse of the Black Pearl", "The Matrix Reloaded", "Finding Nemo", "The Last Samurai", "Bruce Almighty", "X2: X-Men United", "Elf", "Terminator 3: Rise of the Machines", "The Italian Job", "The Hulk", "Bad Boys II", "S.W.A.T.", "Seabiscuit", "Holes", "Master and Commander: The Far Side of the World", "School of Rock", "2 Fast 2 Furious", "The League of Extraordinary Gentlemen", "Underworld"],
+    y2002: ["The Lord of the Rings: The Two Towers", "Spider-Man", "Star Wars: Episode II - Attack of the Clones", "Harry Potter and the Chamber of Secrets", "Men in Black II", "Ice Age", "My Big Fat Greek Wedding", "Signs", "Austin Powers in Goldmember", "Minority Report", "Chicago", "Lilo & Stitch", "Scooby-Doo", "XXX", "Catch Me If You Can", "The Ring", "The Santa Clause 2", "Blade II", "The Bourne Identity", "8 Mile"],
+    y2001: ["Harry Potter and the Sorcerer's Stone", "The Lord of the Rings: The Fellowship of the Ring", "Shrek", "Monsters, Inc.", "Ocean's Eleven", "Pearl Harbor", "Jurassic Park III", "Planet of the Apes", "A Beautiful Mind", "Hannibal", "The Mummy Returns", "A.I. Artificial Intelligence", "The Fast and the Furious", "Atlantis: The Lost Empire", "Dr. Dolittle 2", "Black Hawk Down", "Moulin Rouge!", "The Princess Diaries", "Spy Kids", "Training Day"],
+    y2000: ["Mission: Impossible 2", "Gladiator", "Cast Away", "What Women Want", "Dinosaur", "How the Grinch Stole Christmas", "Meet the Parents", "The Perfect Storm", "X-Men", "What Lies Beneath", "Scary Movie", "The Patriot", "Remember the Titans", "Chicken Run", "Meet the Fockers", "Gone in 60 Seconds", "Hollow Man", "The Emperor's New Groove", "Erin Brockovich", "The Flintstones in Viva Rock Vegas"]
+};
+
 
 
 
@@ -608,6 +641,7 @@ document.querySelector(".list2").addEventListener("click",()=>{
     let preId2="action"
     document.querySelector("#container2").addEventListener("click",(event)=>{
         // reseting the color right after the click 
+        console.log(event.target.id)
         document.querySelector(`#${preId2}`).style.color="white";
 
         // changing the color after click 
@@ -637,10 +671,10 @@ document.querySelector(".list2").addEventListener("click",()=>{
             })
 
         })
-document.querySelector("#search").addEventListener("submit",()=>{
-
+document.querySelector("#search").addEventListener("submit",(e)=>{
+    e.preventDefault();
     search();
-
+    console.log("searched")
 
 })
     function search(){
