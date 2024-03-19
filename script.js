@@ -770,6 +770,8 @@ async function getTailer(names){
 }
 document.querySelector("#Home").addEventListener("click",(event)=>{
 
+        document.querySelector(".trailer").innerHTML=""
+        document.querySelector("#sBox").value=""
         document.querySelector(".searchC").style.display="none"
         document.querySelector("#container1").style.display="flex"
         document.querySelector("#container2").style.display="flex"
@@ -780,8 +782,6 @@ document.querySelector("#Home").addEventListener("click",(event)=>{
         document.querySelector("#list4").style.color="white";
 
 })
-
-
 document.querySelector("img").addEventListener("click",(event)=>{
 
     console.log("ok")
