@@ -735,7 +735,6 @@ sBox.addEventListener("keyup",()=>{
 </div>
 
 `
-console.log(vUrl)
 })
     }
 })
@@ -746,7 +745,6 @@ return data;
 }
 
 // for trailer
-let movieTitle="parking"
 async function getTailer(names){
     const p1=await fetch(`https://www.googleapis.com/youtube/v3/search?key=${googleApiKey}&q=${names} trailer&type=video`)
     const p2=await p1.json();
