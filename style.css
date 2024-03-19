@@ -301,6 +301,9 @@ main {
         margin-left: 2px;
         display: none;
     }
+    #sBox{
+        color:"white"
+    }
     .details{
         width: 100vw;
        
@@ -413,6 +416,9 @@ main {
     header #search {
         display:block;
     }
+    #sBox{
+        color:"white"
+    }
 
     .details{
         width: 100vw;
@@ -513,6 +519,9 @@ main {
 
     header #search {
         display: block;
+    }
+    #sBox{
+        color:"white"
     }
     .details{
         width: 100vw;
@@ -619,6 +628,9 @@ main {
     header #search {
         display: block;
     }
+    #sBox{
+        color:"white"
+    }
     .details{
         width: 100vw;
         
@@ -676,7 +688,8 @@ main {
     }
 
     #container2 {
-        width: 20%
+        width: 20%;
+        margin-top: 10px;
     }
 
     #container2 li {
