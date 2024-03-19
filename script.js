@@ -525,7 +525,8 @@ const genres = {
   
 
 // for trending page
-let promiseArr=[]
+function land(){
+    let promiseArr=[]
 landingArr.forEach((names)=>{
    promiseArr.push( getM(names));
 
@@ -545,14 +546,17 @@ Promise.all(promiseArr).then((d)=>{
 .catch((error) => {
     console.error('Error occurred:', error);
 });
+}
+land();
+let preId1="list1"
 document.querySelector("#lists").addEventListener("click",(event)=>{
-    document.querySelector("#list1").style.color="white";
-    document.querySelector("#list2").style.color="white";
-    document.querySelector("#list3").style.color="white";
-    document.querySelector("#list4").style.color="white";
-    
+   
+   // reseting the earlier style 
+   document.querySelector(`#${preId1}`).style.color="white";
     // changing the color of the list on click 
     document.querySelector(`#${event.target.id}`).style.color="coral";
+    preId1=event.target.id;
+
 let promise2Arr=[]
 
     movieLists[event.target.id].forEach((names)=>{
@@ -599,7 +603,14 @@ document.querySelector(".list2").addEventListener("click",()=>{
          console.error('Error occurred:', error);
      });
     });
+    let preId2="action"
     document.querySelector("#container2").addEventListener("click",(event)=>{
+        // reseting the color right after the click 
+        document.querySelector(`#${preId2}`).style.color="white";
+
+        // changing the color after click 
+        document.querySelector(`#${event.target.id}`).style.color="coral";
+        preId2=event.target.id;
         let promisearr=[]
         // use big bracket in wants value of it 
         genres[event.target.id].forEach(names=>{
@@ -624,13 +635,10 @@ document.querySelector(".list2").addEventListener("click",()=>{
             })
 
         })
-    
-sBox.addEventListener("keyup",()=>{
+document.querySelector("#search").addEventListener("submit",()=>{
 
     if(sBox.value==""){
-        document.querySelector(".searchC").style.display="none"
-        document.querySelector("#container1").style.display="flex"
-        document.querySelector("#container2").style.display="flex"
+        
     }
     else {
         let pa=[]
@@ -746,6 +754,7 @@ sBox.addEventListener("keyup",()=>{
 })
     }
 })
+    
 async function getM(mName){
 const p1=await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&t=${mName}`)
 const data=await p1.json();
@@ -759,6 +768,19 @@ async function getTailer(names){
     console.log(p2)
     return p2;
 }
+document.querySelector("#Home").addEventListener("click",(event)=>{
+
+        document.querySelector(".searchC").style.display="none"
+        document.querySelector("#container1").style.display="flex"
+        document.querySelector("#container2").style.display="flex"
+        land();
+        document.querySelector("#list1").style.color="white";
+        document.querySelector("#list2").style.color="white";
+        document.querySelector("#list3").style.color="white";
+        document.querySelector("#list4").style.color="white";
+
+})
+
 
 document.querySelector("img").addEventListener("click",(event)=>{
 
