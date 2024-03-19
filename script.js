@@ -1,5 +1,6 @@
 const fp=document.querySelector("#container1")
 const sBox=document.querySelector("#sBox")
+let f=0;
 const apiKey="76f8f9c9";
 const googleApiKey="AIzaSyBGh2NURdIC06m3FMCspVyz7N5MuU5MooI"
 const genreIds = ["action", "animation", "comedy", "crime", "drama", "family", "fantasy", "fiction", "horror", "mystery", "mythology", "thriller", "romance", "sci-fi", "18+"];
@@ -536,7 +537,7 @@ Promise.all(promiseArr).then((d)=>{
     let i=1;
         d.forEach((dd)=>{
             combiner=combiner+ `<div class="box">
-            <div class="id${i} common flex"><img src=${dd.Poster}></div>
+            <div class="id${i} common flex"><img id=${dd.Title} src=${dd.Poster}></div>
             <p>${dd.Title}</p>
         </div> `
         i++;
@@ -567,7 +568,7 @@ let promise2Arr=[]
          let i=1;
              d.forEach((dd)=>{
                  combiner=combiner+ `<div class="box">
-                 <div class="id${i} common flex"><img src=${dd.Poster}></div>
+                 <div class="id${i} common flex"><img id=${dd.Title} src=${dd.Poster}></div>
                  <p>${dd.Title}</p>
              </div> `
              i++;
@@ -592,7 +593,7 @@ document.querySelector(".list2").addEventListener("click",()=>{
          let i=1;
              d.forEach((dd)=>{
                  combiner=combiner+ `<div class="box">
-                 <div class="id${i} common flex"><img src=${dd.Poster}></div>
+                 <div class="id${i} common flex"><img id=${dd.Title} src=${dd.Poster}></div>
                  <p>${dd.Title}</p>
              </div> `
              i++;
@@ -621,7 +622,7 @@ document.querySelector(".list2").addEventListener("click",()=>{
                 let combiner=""
                 d.forEach((dd)=>{
                     combiner=combiner+`<div class="box">
-                    <div class="id${i} common flex"><img src=${dd.Poster}></div>
+                    <div class="id${i} common flex"><img id=${dd.Title} src=${dd.Poster}></div>
                     <p>${dd.Title}</p>
                 </div> `
 
@@ -636,7 +637,10 @@ document.querySelector(".list2").addEventListener("click",()=>{
 
         })
 document.querySelector("#search").addEventListener("submit",()=>{
-
+    search()
+})
+    function search(){
+     f=1;
     if(sBox.value==""){
         
     }
@@ -753,7 +757,9 @@ document.querySelector("#search").addEventListener("submit",()=>{
 `
 })
     }
-})
+}
+
+
     
 async function getM(mName){
 const p1=await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&t=${mName}`)
@@ -769,21 +775,25 @@ async function getTailer(names){
     return p2;
 }
 document.querySelector("#Home").addEventListener("click",(event)=>{
-
-        document.querySelector(".trailer").innerHTML=""
+        console.log("ok")
+       if(f==1) 
+       document.querySelector(".trailer").innerHTML=""
         document.querySelector("#sBox").value=""
         document.querySelector(".searchC").style.display="none"
         document.querySelector("#container1").style.display="flex"
         document.querySelector("#container2").style.display="flex"
         land();
-        document.querySelector("#list1").style.color="white";
-        document.querySelector("#list2").style.color="white";
-        document.querySelector("#list3").style.color="white";
-        document.querySelector("#list4").style.color="white";
+        document.querySelector(`#${preId1}`).style.color="white"
+        document.querySelector(`#${preId2}`).style.color="white"
 
 })
-document.querySelector("img").addEventListener("click",(event)=>{
-
-    console.log("ok")
+document.querySelector("#container1").addEventListener("click",(event)=>{
+    if(event.target.tagName.toLowerCase()=="img"){
+    const p1=event.target.parentNode
+    const mainp=p1.parentNode
+    sBox.value=`${mainp.querySelector("p").innerHTML}`
+    search();
+    }
 
 })
+
