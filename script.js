@@ -546,7 +546,15 @@ Promise.all(promiseArr).then((d)=>{
     console.error('Error occurred:', error);
 });
 document.querySelector("#lists").addEventListener("click",(event)=>{
+    document.querySelector("#list1").style.color="white";
+    document.querySelector("#list2").style.color="white";
+    document.querySelector("#list3").style.color="white";
+    document.querySelector("#list4").style.color="white";
+    
+    // changing the color of the list on click 
+    document.querySelector(`#${event.target.id}`).style.color="coral";
 let promise2Arr=[]
+
     movieLists[event.target.id].forEach((names)=>{
         promise2Arr.push( getM(names));
     })
@@ -748,5 +756,12 @@ return data;
 async function getTailer(names){
     const p1=await fetch(`https://www.googleapis.com/youtube/v3/search?key=${googleApiKey}&q=${names} trailer&type=video`)
     const p2=await p1.json();
+    console.log(p2)
     return p2;
 }
+
+document.querySelector("img").addEventListener("click",(event)=>{
+
+    console.log("ok")
+
+})
