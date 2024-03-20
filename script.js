@@ -588,7 +588,9 @@ let preId1="list1"
 document.querySelector("#lists").addEventListener("click",(event)=>{
    
     // when something was searched and clicked on the lists it will not display unless this
+    if(f==1)
     document.querySelector(".trailer").innerHTML=""
+
     document.querySelector("#sBox").value=""
     document.querySelector(".searchC").style.display="none"
     document.querySelector("#container1").style.display="flex"
@@ -621,30 +623,6 @@ let promise2Arr=[]
      });
      promise2Arr=[]
 })
-let promise4Arr=[]
-document.querySelector(".list2").addEventListener("click",()=>{
-
-
-    landingArr.forEach((names)=>{
-        promise4Arr.push( getM(names));
-     
-     })
-     Promise.all(promise4Arr).then((d)=>{
-         let combiner=""
-         let i=1;
-             d.forEach((dd)=>{
-                 combiner=combiner+ `<div class="box">
-                 <div class="id${i} common flex"><img id=${dd.Title} src=${dd.Poster}></div>
-                 <p>${dd.Title}</p>
-             </div> `
-             i++;
-             })
-             document.querySelector("#container1").innerHTML=combiner;
-     })
-     .catch((error) => {
-         console.error('Error occurred:', error);
-     });
-    });
     let preId2="action"
     document.querySelector("#container2").addEventListener("click",(event)=>{
         // reseting the color right after the click 
